@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "The Old Reader Dark",
+  "version": "0.1",
+  "description": "Dark theme for The Old Reader.",
+  "homepage_url": "https://github.com/laedit/the-old-reader-dark",
+  "permissions": ["*://theoldreader.com/*"],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": [
+        "*://theoldreader.com/*"
+      ],
+      "css": [
+        "data/the-old-reader-dark.css"
+      ]
+    }
+  ],
+  "icons": {
+    "64": "icon.png"
+  }
+}
