@@ -5,9 +5,9 @@
     background-color: #222 !important;
 }
 
-.dropdown-menu>li>a:hover
+.dropdown-menu>li>a
 {
-    color: #333 !important;
+    color: #fff !important;
 }
 
 .navbar-fixed-top
