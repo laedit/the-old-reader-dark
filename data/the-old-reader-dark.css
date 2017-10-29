@@ -79,6 +79,13 @@ body
     background-image: linear-gradient(to bottom, #444, #555) !important;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 1px 2px rgba(0, 0, 0, 0.05) !important;
 }
+
+.btn-danger
+{
+    background-color: #d9534f !important;
+    background-image: none !important;
+}
+
 /* end BOTH COLS */
 
 /* left col*/
