@@ -2,4 +2,7 @@
 
 Dark theme for The Old Reader.
 
-https://addons.mozilla.org/fr/firefox/addon/the-old-reader-dark/
+Available on:
+
+ - Firefox: https://addons.mozilla.org/fr/firefox/addon/the-old-reader-dark/
+ - Chrome: https://chrome.google.com/webstore/detail/the-old-reader-dark/fpjjphhhciifpfhapopmdfppmhkepmnl
