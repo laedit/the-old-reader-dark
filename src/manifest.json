@@ -2,22 +2,28 @@
   "manifest_version": 2,
   "name": "The Old Reader Dark",
   "short_name": "the-old-reader-dark",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Dark theme for The Old Reader.",
   "homepage_url": "https://github.com/laedit/the-old-reader-dark",
-  "permissions": ["*://theoldreader.com/*"],
+  "permissions": [
+    "*://theoldreader.com/*",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "content_scripts": [
     {
       "run_at": "document_start",
       "matches": [
         "*://theoldreader.com/*"
       ],
-      "css": [
-        "data/the-old-reader-dark.css"
-      ]
+      "css": ["content_scripts/dark-theme.css"],
+      "js": ["content_scripts/inject-css.js"]
     }
   ],
   "icons": {
-    "64": "icon.png"
+    "64": "icons/icon.png",
+    "128": "icons/icon-128.png"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "the-old-reader-dark-master",
+  "version": "0.4",
+  "description": "Dark theme for The Old Reader.",
+  "repository": "https://github.com/laedit/the-old-reader-dark",
+  "author": "laedit",
+  "license": "Apache-2.0",
+  "scripts": {
+    "clean:build": "rimraf build",
+    "build:files": "cpx \"src/{icons/**,content_scripts/*.css,options.html}\" build/base",
+    "build:base": "yarn clean:build && tsc && yarn build:files",
+    "build:firefox": "cpx \"build/base/**\" build/firefox && node tools/build-specific.js firefox",
+    "build:chrome": "cpx \"build/base/**\" build/chrome && node tools/build-specific.js chrome",
+    "build":"yarn build:base && yarn build:firefox && yarn build:chrome",
+    "start": "yarn build:base && yarn build:firefox && web-ext run --source-dir=build/firefox --firefox=firefoxdeveloperedition",
+    "package:firefox": "web-ext build --source-dir=build/firefox --overwrite-dest --artifacts-dir=./web-ext-artifacts/firefox",
+    "package:chrome": "web-ext build --source-dir=build/chrome --overwrite-dest --artifacts-dir=./web-ext-artifacts/chrome",
+    "package": "yarn build && yarn package:firefox && yarn package:chrome"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.89",
+    "archiver": "^3.0.0",
+    "cpx": "^1.5.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.0.3"
+  }
+}

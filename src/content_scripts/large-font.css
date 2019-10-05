@@ -1,0 +1,40 @@
+body
+{
+    font-size: 16px !important;
+}
+
+.well
+{
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+.subscribe .btn-primary
+{
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+.post.unread
+{
+    border-left-style: solid !important;
+    border-left-width: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 11px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+}
+
+.post
+{
+    padding-bottom: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+}
+
+img
+{
+    margin-bottom: 15px !important;
+    margin-top: 5px !important;
+}

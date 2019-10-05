@@ -39,7 +39,7 @@ nav.nav li.divider-vertical
 .form-search .btn
 {
     background-color: transparent !important;
-    background-image: url("http://theoldreader.com/assets/ico-search.png") !important;
+    background-image: url("//theoldreader.com/assets/ico-search.png") !important;
     background-position: center center !important;
 }
 
@@ -62,13 +62,12 @@ body
 {
     background-color: #333 !important;
     color: #999999 !important;
-    font-size: 16px !important;
 }
 
 .well
 {
     background-color: #222 !important;
-    border: 1px solid #222 !important;
+    border-color: #222 !important;
 }
 
 .btn
@@ -101,7 +100,7 @@ body
 
 .subscribe .btn-primary
 {
-    border: 1px solid #191919 !important;
+    border-color: #191919 !important;
 }
 /*end subscribe button*/
 /*nav list*/
@@ -170,11 +169,7 @@ body
 
 .post.unread
 {
-    border-left: 10px solid #26687f !important;
-    padding-bottom: 10px !important;
-    padding-left: 11px !important;
-    padding-right: 10px !important;
-    padding-top: 10px !important;
+    border-left-color: #26687f !important;
 }
 
 .post.unread .content
@@ -187,23 +182,9 @@ body
     color: #ccc !important;
 }
 
-.post
-{
-    padding-bottom: 10px !important;
-    padding-left: 20px !important;
-    padding-right: 10px !important;
-    padding-top: 10px !important;
-}
-
 .post blockquote
 {
     background-color: #222 !important;
-}
-
-img
-{
-    margin-bottom: 15px !important;
-    margin-top: 5px !important;
 }
 
 

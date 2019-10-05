@@ -1,0 +1,12 @@
+{
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{bd10894f-7ece-4d91-b678-53fa508b9e6a}",
+      "strict_min_version": "57.0"
+    }
+  }
+}
